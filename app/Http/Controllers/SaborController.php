@@ -15,7 +15,7 @@ public function index(){
     return view('lista-sabores')->with('sabores', $sabores);
 }
 
-// retornando formulario para criar sabores
+// retornando formulario para criar sabores iiii
 public function create(){
     return view('adiciona-sabor');
 }

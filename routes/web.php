@@ -48,7 +48,7 @@ Route::delete('/exclui-sabor/{id}', 'SaborController@delete');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-// end admin session //
+// end  admin session //
 
 
 Auth::routes();
