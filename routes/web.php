@@ -29,6 +29,28 @@ Route::get('master', function () {
     return view('layouts.master');
 });
 
+
+// Admin session //
+
+Route::get('/lista-sabores', 'SaborController@index');
+
+Route::get('/adiciona-sabor', 'SaborController@create');
+Route::post('/adiciona-sabor', 'SaborController@store');
+
+Route::get('/edita-sabores/{id}', 'SaborController@edit');
+Route::put('/edita-sabores/{id}', 'SaborController@update');
+
+Route::get('/altera-sabor/{id}', 'SaborController@edit');
+Route::put('/altera-sabor/{id}', 'SaborController@update');
+
+Route::delete('/exclui-sabor/{id}', 'SaborController@delete');
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+// end admin session //
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
