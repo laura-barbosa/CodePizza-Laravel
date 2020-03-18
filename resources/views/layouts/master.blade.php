@@ -231,7 +231,7 @@
 
 
 
-
+<!-- quem somos -->
 
     <div class="card mb-4 w-100 .float-left mt-4" style="height:500px" id="quem"> 
             <div class="row no-gutters" style="height:800px">
@@ -490,10 +490,10 @@ function Teste(){
 }
 (function () {
 var options = {
-whatsapp: "+5511988828557", // Número do WhatsApp
+whatsapp: "+5511975091909", // Número do WhatsApp
 company_logo_url: "//www.webcreative.com.br/themes/webcreative/images/perfil.jpg", // URL com o logo da empresa
 greeting_message: "Olá! A CodePizza está pronta para atende-lo", // Texto principal
-call_to_action: "Faça seu pedido agora aqui pelo Whatsapp ;)", // Chamada para ação
+call_to_action: "Faça seu pedido agora por aqui ;)", // Chamada para ação
 position: "right", // Posição do widget na página 'right' ou 'left'
 };
 var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;

@@ -22,6 +22,8 @@
         <br>
         <br>
 
+        <!-- lista para editar os sabores -->
+
         <section class="row">
             <article class="col-12">
                 <table class="table">

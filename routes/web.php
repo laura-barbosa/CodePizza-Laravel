@@ -48,6 +48,12 @@ Route::delete('/exclui-sabor/{id}', 'SaborController@delete');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('store_image','StoreImageController@index');
+Route::post('store_image/insert_image', 'StoreImageController@insert_image');
+
+Route::get('store_image/fetch_image/{id}','StoreImageController@fetch_image');
+
+
 // end  admin session //
 
 

@@ -32,7 +32,7 @@ public function store(Request $request){
         'sabor' => $request->input('nomesabor'),
         'ingredientes' => $request->input('ingredientes'),
         'preco' => $request->input('preco'),
-        //'imagem' => 'caminho_imagem'
+        'imagem' => 'public/img/'
     ]);
 
     return redirect('/lista-sabores');
@@ -58,6 +58,7 @@ public function update(Request $request, $id){
     $sabores->sabor = $request->input('nomesabor');
     $sabores->ingredientes = $request->input('ingredientes');
     $sabores->preco = $request->input('preco');
+    //'imagem' => 'public/img/';
 
     $sabores->save();
 
