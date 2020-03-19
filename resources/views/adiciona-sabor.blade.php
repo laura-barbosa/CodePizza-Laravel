@@ -25,10 +25,10 @@
             <div class="invalid-feedback">{{ $errors->first('preco') }}</div>
         </div>
 
-        <!--<div class="form-group col-md-6 col-sm-12">
+        <div class="form-group col-md-6 col-sm-12">
             <label for="imagem">Imagem</label>
             <input type="file" name="imagem" class="form-control" id="imagem">
-        </div> -->
+        </div>
 
         <div class="form-group col-md-2">
             <button type="submit" class="form-control btn btn-primary">Enviar</button>
