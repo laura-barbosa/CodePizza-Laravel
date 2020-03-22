@@ -29,7 +29,8 @@
 
         <div class="form-group col-md-6 col-sm-12">
             <label for="imagem">Imagem</label>
-            <input type="file" name="imagem" class="form-control" id="imagem">
+            <input type="file" name="imagem" value="{{ $sabores->imagem }}" class="form-control{{$errors->has('imagem') ? ' is-invalid':''}}" id="imagem">
+            <div class="invalid-feedback">{{ $errors->first('imagem') }}</div>
         </div>
 
         <div class="form-group col-md-2">

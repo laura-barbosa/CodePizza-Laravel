@@ -29,6 +29,7 @@
                 <table class="table">
                     <thead class="thead-light">
                         <tr>
+                            <th scope="col">Imagem</th>                            
                             <th scope="col">Nome do Sabor</th>
                             <th scope="col">Ingredientes</th>
                             <th scope="col">preço</th>
@@ -38,6 +39,9 @@
                     <tbody>
                         @foreach($sabores as $sabores)
                         <tr>
+                            <td scope="row">
+                                <img width="80" height="80" src="{{ $sabores->imagem_image }}" alt="">
+                            </td>
                             <td scope="row">{{$sabores->sabor}}</td>
                             <td scope="row">{{$sabores->ingredientes}}</td>
                             <td scope="row">{{$sabores->preco}}</td>

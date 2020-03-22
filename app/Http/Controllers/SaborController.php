@@ -28,11 +28,23 @@ public function store(Request $request){
         'preco' => 'required'
     ]);
 
+    $arquivo = $request->file('imagem');
+
+    if(empty($arquivo)){
+        $caminhoRelativo = null;
+    } else {
+        $arquivo->storePublicly('uploads');
+        $caminhoAbsoluto = public_path()."/storage/uploads";
+        $nomeArquivo = $arquivo->getClientOriginalName();
+        $caminhoRelativo = "storage/uploads/$nomeArquivo";
+        $arquivo->move($caminhoAbsoluto,$nomeArquivo);
+    }
+
     sabores::create([
         'sabor' => $request->input('nomesabor'),
         'ingredientes' => $request->input('ingredientes'),
         'preco' => $request->input('preco'),
-        'imagem' => 'public/img/'
+        'imagem' => $caminhoRelativo,
     ]);
 
     return redirect('/lista-sabores');
@@ -52,14 +64,25 @@ public function update(Request $request, $id){
         'ingredientes' => 'required|min:10',
         'preco' => 'required'
     ]);
+    $arquivo = $request->file('imagem');
+
+    if(empty($arquivo)){
+        $caminhoRelativo = null;
+    } else {
+        $arquivo->storePublicly('uploads');
+        $caminhoAbsoluto = public_path()."/storage/uploads";
+        $nomeArquivo = $arquivo->getClientOriginalName();
+        $caminhoRelativo = "storage/uploads/$nomeArquivo";
+        $arquivo->move($caminhoAbsoluto,$nomeArquivo);
+    }
 
     $sabores = sabores::find($id);
 
     $sabores->sabor = $request->input('nomesabor');
     $sabores->ingredientes = $request->input('ingredientes');
     $sabores->preco = $request->input('preco');
-    //'imagem' => 'public/img/';
-
+    $sabores->imagem = $caminhoRelativo;
+    
     $sabores->save();
 
     return redirect('/lista-sabores');
