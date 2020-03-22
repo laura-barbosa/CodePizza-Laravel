@@ -36,7 +36,7 @@
                 </div>
             </div>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-warning my-2 my-sm-0" onClick="window.open('login.html','pagename','resizable,height=800px,width=1600px'); return false;" type="submit" id="btnLogin"> Login</button>
+                <button class="btn btn-outline-warning my-2 my-sm-0" onClick="window.open('loginn','pagename','resizable,height=800px,width=1600px'); return false;" type="submit" id="btnLogin"> Login</button>
                 </form>
             <form class="form-inline" id="formLogin" style="display:none">
                 <div class="form-group mx-sm-3 mb-2" >
@@ -53,68 +53,58 @@
     </header>
 
     <section> 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="{{asset('/img/back.jpg')}}" alt="Primeiro Slide">
-      </div>
-      <!-- <div class="carousel-item">
-        <img class="d-block w-100" src="{{asset('/img/back2.jpg')}}" alt="Segundo Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{asset('/img/back3.jpg')}}" alt="Terceiro Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{asset('/img/back4.jpg')}}" alt="Quarto Slide">
-      </div> -->
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
-  </section> 
-
-
-  <div id="apaixonados" class="Index-page-content  w-100 .float-left" style="margin-left:50px; margin-left:200px; height:300px; margin-top:200px" id="yui_3_17_2_1_1582853149157_67">
-        <div class="sqs-layout sqs-grid-12 columns-12">
-            <img src="{{asset('/img/apaixonados.png')}}">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{asset('/img/back.jpg')}}" alt="Primeiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
-        <div  id="texto" style="font-family: proxima-nova;  float:left; width:550px; margin-left:500px; margin-top:-100px;" class="sqs-block-content">
-            <p>Ingredientes garimpados, receitas inspiradas, hospitalidade em cada
-                detalhe. Com 20 anos de história e o posto <strong>entre as 10
-                    melhores pizzarias do mundo</strong> - em ranking dos jornais
-                <em>The Guardian</em> e <em>Corriere della Sera</em> -, a CodePizza é
-                uma pizzaria apaixonada por pizza, como você.
-            </p>
+    </section> 
+
+    <div class="card mb-4 w-100 .float-left mt-0" style="height:800px" id="apaixonados">
+        <div id="apaixonados" class="Index-page-content  w-100 .float-left" style="margin-left:50px; margin-left:200px; height:300px; padding-top:200px" id="yui_3_17_2_1_1582853149157_67">
+            <div class="sqs-layout sqs-grid-12 columns-12">
+                <img src="{{asset('/img/apaixonados.png')}}">
+            </div>
+            <div  id="texto" style="font-family: proxima-nova;  float:left; width:550px; margin-left:500px; margin-top:-100px;" class="sqs-block-content">
+                <p>Ingredientes garimpados, receitas inspiradas, hospitalidade em cada
+                    detalhe. Com 20 anos de história e o posto <strong>entre as 10
+                        melhores pizzarias do mundo</strong> - em ranking dos jornais
+                    <em>The Guardian</em> e <em>Corriere della Sera</em> -, a CodePizza é
+                    uma pizzaria apaixonada por pizza, como você.
+                </p>
+            </div>
         </div>
-    </div>
+    <div>
 
-    <p style="float:left; margin-left:20px; font-weight:bold; font-size:25px;text-decoration:underline">Pizzas selecionadas</p>
-
+    <p style="float:left; margin-left:20px; margin-top:200px; font-weight:bold; font-size:25px;text-decoration:underline">Pizzas selecionadas</p>
 
     <div class="card-group" style="margin-top:10px; float:left;">
-  <div class="card">
-    <img class="card-img-top" src="{{asset('/img/sabor1.jpg')}}" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="{{asset('/img/sabor2.jpg')}}" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="{{asset('/img/sabor3.jpg')}}" alt="Card image cap">
-  </div>
-</div>
+        <div class="card">
+            <img class="card-img-top" src="{{asset('/img/sabor1.jpg')}}" alt="Card image cap">
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{{asset('/img/sabor2.jpg')}}" alt="Card image cap">
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{{asset('/img/sabor3.jpg')}}" alt="Card image cap">
+        </div>
+    </div>
 
 
     @php 
@@ -171,19 +161,12 @@
         ],
     ];
 @endphp
-        <!-- "8" => [
-            "imagem" => "img/java-codepizza.png",
-            "titulo" => "JAVA",
-            "sabores" => "molho de tomate, linguiça calabresa moída, Catupiry, parmesão ralado, orégano e azeitonas pretas.",
-            "preco" => "R$ 57,00"
-        ] -->
-
-
-<!-- 1935l -->
+    
    
+<div class="card mb-4 w-100 .float-left mt-0" style="height:2000" id="cardapio">
 <section class="mt-1 container" style="margin-top: -550px; float:left; margin-top:50px" id="sabor" >
-<p style="font-size:25px; font-weight:bold; text-decoration:underline; backfround-color:black" class="card-title"  >Nossos sabores</p>
-    <!-- <p>As melhores pizzas da cidade!!!</p> -->
+    <p style="font-size:25px;margin-left:-70px; font-weight:bold; text-decoration:underline; backfround-color:black" class="card-title"  >Nossos sabores</p>
+        <!-- <p>As melhores pizzas da cidade!!!</p> -->
     <div class="row" style="margin-left:300px">
         @foreach($filmes as $key => $value): 
             <div class="border mb-5 col-12 col-md-4 col-lg-5">
@@ -195,7 +178,7 @@
                     <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal<?php echo $key; ?>">
                         Saiba mais...
                     </button>
-                     <form action="" method="GET" class="d-inline-block">
+                    <form action="" method="GET" class="d-inline-block">
                         <input type="hidden" value="<?php echo $value["titulo"]; ?>" name="titulo">
                         <button type="submit" class="btn btn-primary mb-4" onclick="Teste()">
                             Comprar
@@ -216,7 +199,7 @@
                             
                                 <p><i class="fa fa-pizza-slice mr-2"></i> Ingredientes: <?php echo $value["sabores"]; ?></p>
                                 <p><i class="fa fa-angry mr-2"></i> Preço: <?php echo $value["preco"]; ?></p>
-                                                 
+                                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -227,13 +210,11 @@
                 </div>
         @endforeach
     </div>
-</section>
+    </div>
+    </section>
 
 
-
-
-
-    <div class="card mb-4 w-100 .float-left mt-4" style="height:500px" id="quem"> 
+    <div class="card mb-4 w-100 .float-left " style="height:500px; margin-top:-100" id="quem"> 
             <div class="row no-gutters" style="height:800px">
                 <div class="col-md-8">
                     <div class="card-body">
@@ -266,41 +247,42 @@
     <main class="py-4">
         @yield('content')
     </main> -->
+
 <div style="margin-top:200px" id="delivery">
-<p style="font-size:25px; font-weight:bold; margin-top:-150px;text-decoration:underline" class="card-title" >Nosso Delivery</p>
+    <p style="font-size:25px; font-weight:bold; margin-top:-180px;text-decoration:underline; margin-left:20px;" class="card-title" >Nosso Delivery</p>
 
 <!-- <div style="font-weight:bold; padding-left:30px; font-family: "Nunito", sans-serif;">
 </div> -->
-<div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
-Ingredientes frescos e de
-altíssima qualidade.
-<img style="" src = "{{asset('img/icon1.jpg')}}">
+    <div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
+        Ingredientes frescos e de
+        altíssima qualidade.
+        <img style="" src = "{{asset('img/icon1.jpg')}}">
+    </div>
+    <div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
+        Levar até sua mesa refeições
+        deliciosas e com rapidez.
+        <img style="" src = "{{asset('img/icon2.jpg')}}">
+    </div>
+    <div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
+        Paixão em compartilhar a
+        experiência e tradição italiana
+        em encantar com o paladar.
+        <img style="" src = "{{asset('img/icon3.jpg')}}">
+    </div>
+    <div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
+        Atendimento de qualidade
+        para tornar a sua experiência
+        inesquecível.
+        <img style="" src = "{{asset('img/icon 4.jpg')}}">
+    </div>
+    <div style="margin-left:100px; float:left; margin-top:50px">
+        <iframe  src="https://www.google.com/maps/d/u/0/embed?mid=1cF_l5GbkdOGVqtbSW9ZkQg-EDfezt2iH" width="500" height="480"></iframe>
+    </div>
+    </div>
+<div>
+_______________________________________________________________________________________________________________________________________________________________________________________________
 </div>
-<div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
-Levar até sua mesa refeições
-deliciosas e com rapidez.
-<img style="" src = "{{asset('img/icon2.jpg')}}">
-</div>
-<div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
-Paixão em compartilhar a
-experiência e tradição italiana
-em encantar com o paladar.
-<img style="" src = "{{asset('img/icon3.jpg')}}">
-</div>
-<div style="width:150px; float:left; margin-top:100px; margin-left:30px;">
-Atendimento de qualidade
-para tornar a sua experiência
-inesquecível.
-<img style="" src = "{{asset('img/icon 4.jpg')}}">
-</div>
-<div style="margin-left:100px; float:left; margin-top:-40px">
-<iframe  src="https://www.google.com/maps/d/u/0/embed?mid=1cF_l5GbkdOGVqtbSW9ZkQg-EDfezt2iH" width="500" height="480"></iframe>
-</div>
-</div>
-
-
-
-    <div class="footer" style=" width: auto; height: 70px; margin-top: 300px;">
+    <div class="footer" style=" width: auto; height: 70px; margin-top: 10px;">
         <div style="float: left; width:400px;">
             <span style=" margin-left:200px; float: left; font-weight: bold; font-size: 15px;">CONTATO</span>
             <span style=" margin-left:-100px;margin-top: 60px; float: left;">(11) 4701-7287</span>
@@ -478,7 +460,7 @@ inesquecível.
 	opacity: .50;
 	filter: alpha(opacity=65);
 } */
-            </style>
+ </style>
 
 
 
@@ -489,19 +471,19 @@ function Teste(){
     window.open('https://www.ifood.com.br/lista-restaurantes')
 }
 (function () {
-var options = {
-whatsapp: "+5511988828557", // Número do WhatsApp
-company_logo_url: "//www.webcreative.com.br/themes/webcreative/images/perfil.jpg", // URL com o logo da empresa
-greeting_message: "Olá! A CodePizza está pronta para atende-lo", // Texto principal
-call_to_action: "Faça seu pedido agora aqui pelo Whatsapp ;)", // Chamada para ação
-position: "right", // Posição do widget na página 'right' ou 'left'
-};
-var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    var options = {
+    whatsapp: "+5511988828557", // Número do WhatsApp
+    company_logo_url: "//www.webcreative.com.br/themes/webcreative/images/perfil.jpg", // URL com o logo da empresa
+    greeting_message: "Olá! A CodePizza está pronta para atende-lo", // Texto principal
+    call_to_action: "Faça seu pedido agora aqui pelo Whatsapp ;)", // Chamada para ação
+    position: "right", // Posição do widget na página 'right' ou 'left'
+    };
+    var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 })();
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
