@@ -29,6 +29,9 @@ Route::get('master', function () {
     return view('layouts.master');
 });
 
+Route::get('/master', 'HomeController@index')->name('home');
+
+
 
 // Admin session //
 
