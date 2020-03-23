@@ -164,40 +164,40 @@
    
 <div class="card mb-4 w-100 .float-left mt-0" style="height:2000" id="cardapio">
 <section class="mt-1 container" style="margin-top: -550px; float:left; margin-top:50px" id="sabor" >
-    <p style="font-size:25px;margin-left:-70px; font-weight:bold; text-decoration:underline; backfround-color:black" class="card-title"  >Nossos sabores</p>
+<p style="font-size:25px;margin-left:-70px; font-weight:bold; text-decoration:underline; background-color:black" class="card-title"  >Nossos sabores</p>
         <!-- <p>As melhores pizzas da cidade!!!</p> -->
     <div class="row" style="margin-left:150px">
-        @foreach($filmes as $key => $value): 
+        @foreach($sabores as $sabores): 
             <div class="border mb-5 col-12 col-md-4 col-lg-5" style="   transition: width 2s, height 4s;">
                 <img class="img-fluid" src="{{ asset($value['imagem']) }}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $value["titulo"]; ?></h5>
-                    <p class="card-text"><?php echo $value["sabores"]; ?></p>
+                    <h5 class="card-title">{{$sabores->sabor}}</h5>
+                    <p class="card-text">{{$sabores->ingredientes}}</p>
                     <p class="card-text"><small class="text-muted">CodePizza...</small></p>
-                    <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal<?php echo $key; ?>">
+                    <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal{{$sabores->id}}">
                         Saiba mais...
                     </button>
                     <form action="" method="GET" class="d-inline-block">
-                        <input type="hidden" value="<?php echo $value["titulo"]; ?>" name="titulo">
+                        <input type="hidden" value={{$sabores->id}}; name="sabores">
                         <button type="submit" class="btn btn-primary mb-4" onclick="Teste()">
                             Comprar
                         </button>
                     </form> 
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal<?php echo $key; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal{{$sabores->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel"><?php echo $value["titulo"]; ?></h5>
+                                <h5 class="modal-title" id="exampleModalLabel">{{$sabores->sabor}}</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                             
-                                <p><i class="fa fa-pizza-slice mr-2"></i> Ingredientes: <?php echo $value["sabores"]; ?></p>
-                                <p><i class="fa fa-angry mr-2"></i> Preço: <?php echo $value["preco"]; ?></p>
+                                <p><i class="fa fa-pizza-slice mr-2"></i> Ingredientes: {{$sabores->ingredientes}}</p>
+                                <p><i class="fa fa-angry mr-2"></i> Preço: {{$sabores->preco}}</p>
                                                 
                             </div>
                             <div class="modal-footer">
