@@ -25,6 +25,10 @@ Route::get('/apaixonados-por-pizza', function () {
     return view('apaixonados');
 });
 
+Route::get('/lista-sabores', function () {
+    return view('lista-sabores');
+});
+
 Route::get('master', function () {
     return view('layouts.master');
 });
