@@ -17,10 +17,12 @@
 
         <!-- botao de cadastrar novos sabores -->
 
-        <a href="adiciona-sabor" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Incluir novos Sabores</a>
+        <div class="mx-auto" style="width: 200px;">
+            <a href="adiciona-sabor" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Incluir novos Sabores</a>
+        </div>    
 
         <br>
-        <br>
+
 
         <!-- lista para editar os sabores -->
 

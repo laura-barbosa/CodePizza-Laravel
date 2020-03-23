@@ -22,6 +22,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+        table {border-style: solid;  border-width: 25px; border-color:azure}
+      </style>
+
 </head>
 <body>
     <div id="app">
