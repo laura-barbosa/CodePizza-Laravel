@@ -29,6 +29,11 @@ Route::get('master', function () {
     return view('layouts.master');
 });
 
+
+Route::get('/loginn', function () {
+    return view('login');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
