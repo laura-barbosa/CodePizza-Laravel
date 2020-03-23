@@ -164,12 +164,12 @@
    
 <div class="card mb-4 w-100 .float-left mt-0" style="height:2000" id="cardapio">
 <section class="mt-1 container" style="margin-top: -550px; float:left; margin-top:50px" id="sabor" >
-<p style="font-size:25px;margin-left:-70px; font-weight:bold; text-decoration:underline; background-color:black" class="card-title"  >Nossos sabores</p>
+<p style="font-size:25px;margin-left:-70px; font-weight:bold; text-decoration:underline;" class="card-title"  >Nossos sabores</p>
         <!-- <p>As melhores pizzas da cidade!!!</p> -->
     <div class="row" style="margin-left:150px">
         @foreach($sabores as $sabores): 
             <div class="border mb-5 col-12 col-md-4 col-lg-5" id="zoom" style="   transition: width 2s, height 4s;">
-                <img class="img-fluid" src="{{ asset($value['imagem']) }}" alt="Card image cap">
+                <img class="img-fluid" src="{{$sabores->imagem}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">{{$sabores->sabor}}</h5>
                     <p class="card-text">{{$sabores->ingredientes}}</p>

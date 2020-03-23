@@ -33,8 +33,8 @@ Route::get('/lista-sabores', function () {
     return view('lista-sabores');
 });
 
-Route::get('master', function () {
-    return view('layouts.master');
+Route::get('loginn', function () {
+    return view('login');
 });
 
 Route::get('/master', 'HomeController@index')->name('home');
@@ -58,6 +58,7 @@ Route::delete('/exclui-sabor/{id}', 'SaborController@delete');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/index', 'HomeController@index')->name('home');
 
 
 
