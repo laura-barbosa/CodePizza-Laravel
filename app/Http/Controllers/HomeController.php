@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index(){
         $sabores = sabores::all();
     
-        return view('layouts.master')->with('sabores', $sabores);
+        return view('layouts.home')->with('sabores', $sabores);
     }
 }
 
