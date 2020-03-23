@@ -168,7 +168,7 @@
         <!-- <p>As melhores pizzas da cidade!!!</p> -->
     <div class="row" style="margin-left:150px">
         @foreach($sabores as $sabores): 
-            <div class="border mb-5 col-12 col-md-4 col-lg-5" style="   transition: width 2s, height 4s;">
+            <div class="border mb-5 col-12 col-md-4 col-lg-5" id="zoom" style="   transition: width 2s, height 4s;">
                 <img class="img-fluid" src="{{ asset($value['imagem']) }}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">{{$sabores->sabor}}</h5>
@@ -447,6 +447,24 @@ ________________________________________________________________________________
 	margin:0;
 	padding:0;
 }
+
+
+#zoom {
+    overflow: hidden;
+  }
+  
+  #zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  #zoom:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
 /* #yui_3_17_2_1_1582853149157_67{
 	position:absolute;
