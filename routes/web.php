@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('index', function () {
+    return view('layouts.home');
+});
+
 Route::get('/quem-somos', function () {
     return view('quem_somos');
 });
